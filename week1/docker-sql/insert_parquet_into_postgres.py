@@ -16,7 +16,7 @@ def insert_parquet_into_postgres(parquet_file_path, table_name, postgres_connect
 
 # Example usage
 if __name__ == "__main__":
-    parquet_file_path = "D:\\My\\my study\\Courses\\ZoomCamp DTC\\week1\\green_tripdata_2025-11.parquet"
+    parquet_file_path = "D:\\My\\my study\\Courses\\ZoomCamp DTC\\week1\\Data\\green_tripdata_2025-11.parquet"
     table_name = "green_taxi_data"
     postgres_connection_string = "postgresql://postgres:postgres@localhost:5433/ny_taxi"
     
