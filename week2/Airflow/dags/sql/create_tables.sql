@@ -1,0 +1,43 @@
+CREATE TABLE IF NOT EXISTS yellow_taxi_data (
+    vendor_id INT,
+    tpep_pickup_datetime TIMESTAMP,
+    tpep_dropoff_datetime TIMESTAMP,
+    passenger_count INT,
+    trip_distance FLOAT,
+    rate_code_id INT,
+    store_and_fwd_flag TEXT,
+    pu_location_id INT,
+    do_location_id INT,
+    payment_type INT,
+    fare_amount FLOAT,
+    extra FLOAT,
+    mta_tax FLOAT,
+    tip_amount FLOAT,
+    tolls_amount FLOAT,
+    improvement_surcharge FLOAT,
+    total_amount FLOAT,
+    congestion_surcharge FLOAT
+);
+
+CREATE TABLE IF NOT EXISTS green_taxi_data (
+    vendor_id INT,
+    lpep_pickup_datetime TIMESTAMP,
+    lpep_dropoff_datetime TIMESTAMP,
+    store_and_fwd_flag TEXT,
+    rate_code_id INT,
+    pu_location_id INT,
+    do_location_id INT,
+    passenger_count INT,
+    trip_distance FLOAT,
+    fare_amount FLOAT,
+    extra FLOAT,
+    mta_tax FLOAT,
+    tip_amount FLOAT,
+    tolls_amount FLOAT,
+    ehail_fee FLOAT,
+    improvement_surcharge FLOAT,
+    total_amount FLOAT,
+    payment_type INT,
+    trip_type INT,
+    congestion_surcharge FLOAT
+);
