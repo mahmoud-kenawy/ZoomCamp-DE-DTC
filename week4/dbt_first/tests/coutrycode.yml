@@ -1,0 +1,14 @@
+version: 2
+
+seeds:
+  - name: countrycode
+    description: "This seed contains country codes and their corresponding names."
+    columns:
+      - name: country
+        tests:
+          - not_null
+          - unique
+      - name: iso_codes
+        tests:
+          - not_null
+          - unique
